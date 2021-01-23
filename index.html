@@ -11,28 +11,34 @@
 </head>
 
 <body>
-
     <header>
         <div class="container">
-
             <section class="logo">
-                <span><strong>Your</strong></span>
-                <span class="blue-dot"></span>
-                <span>Logo</span>
+                <a href="#top">
+                    <span><strong class="logo-text">Your</strong></span>
+                    <span class="blue-dot"></span>
+                    <span class="logo-text">Logo</span>
+                </a>
             </section>
 
             <nav>
                 <ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Promotions</a></li>
-                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#more-info">About us</a></li>
+                    <li><a href="#best-sellers">Best sellers</a></li>
+                    <li><a href="#newsletter">Newsletter</a></li>
+                    <li class="menu-icon"><img src="images/hamberger_icon.png" alt="Menu icon"></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <section class="hero">
-        <img src="images/Hero_image.jpg" alt="hero image - smart watch">
+        <picture>
+            <source media="(max-width: 576px)" srcset="images/Hero_Large_Mobile.png">
+            <source media="(max-width: 960px)" srcset="images/Hero_Tablet.png">
+            <source media="(max-width: 1440px)" srcset="images/Hero_Desktop.png">
+            <img src="images/Hero_Large_Desktop.png" alt="hero image - smart watch">
+        </picture>
 
         <section class="hero-content">
             <div class="container">
@@ -46,7 +52,7 @@
         </section>
     </section>
 
-    <section class="best-sellers">
+    <section class="best-sellers" id="best-sellers">
         <h2>best sellers</h2>
         <hr>
 
@@ -80,7 +86,7 @@
                     </div>
                 </div>
 
-                <div class="product new">
+                <div class="product">
                     <div class="product-img">
                         <img src="./images/Headphone.jpg" alt="product: Noise Cancelling Headphone" <>
                     </div>
@@ -100,7 +106,7 @@
         </div>
     </section>
 
-    <section class="newsletter">
+    <section class="newsletter" id="newsletter">
         <h3>Newsletter Signup</h3>
         <p>Subscribe now and don't miss a single deal!</p>
         <form>
@@ -109,7 +115,7 @@
         </form>
     </section>
 
-    <footer>
+    <footer id="more-info">
         <div class="bottom-nav">
             <div class="container">
                 <ul>
